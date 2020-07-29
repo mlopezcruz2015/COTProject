@@ -1,0 +1,13 @@
+C:\Users\mlopezcruz2015\Documents\COTProject\COTProject\COTProject\bin\Debug\netcoreapp3.1\COTProject.exe
+C:\Users\mlopezcruz2015\Documents\COTProject\COTProject\COTProject\bin\Debug\netcoreapp3.1\COTProject.deps.json
+C:\Users\mlopezcruz2015\Documents\COTProject\COTProject\COTProject\bin\Debug\netcoreapp3.1\COTProject.runtimeconfig.json
+C:\Users\mlopezcruz2015\Documents\COTProject\COTProject\COTProject\bin\Debug\netcoreapp3.1\COTProject.runtimeconfig.dev.json
+C:\Users\mlopezcruz2015\Documents\COTProject\COTProject\COTProject\bin\Debug\netcoreapp3.1\COTProject.dll
+C:\Users\mlopezcruz2015\Documents\COTProject\COTProject\COTProject\bin\Debug\netcoreapp3.1\COTProject.pdb
+C:\Users\mlopezcruz2015\Documents\COTProject\COTProject\COTProject\obj\Debug\netcoreapp3.1\COTProject.AssemblyInfoInputs.cache
+C:\Users\mlopezcruz2015\Documents\COTProject\COTProject\COTProject\obj\Debug\netcoreapp3.1\COTProject.AssemblyInfo.cs
+C:\Users\mlopezcruz2015\Documents\COTProject\COTProject\COTProject\obj\Debug\netcoreapp3.1\COTProject.csproj.CoreCompileInputs.cache
+C:\Users\mlopezcruz2015\Documents\COTProject\COTProject\COTProject\obj\Debug\netcoreapp3.1\COTProject.dll
+C:\Users\mlopezcruz2015\Documents\COTProject\COTProject\COTProject\obj\Debug\netcoreapp3.1\COTProject.pdb
+C:\Users\mlopezcruz2015\Documents\COTProject\COTProject\COTProject\obj\Debug\netcoreapp3.1\COTProject.genruntimeconfig.cache
+C:\Users\mlopezcruz2015\Documents\COTProject\COTProject\COTProject\obj\Debug\netcoreapp3.1\COTProject.csprojAssemblyReference.cache
