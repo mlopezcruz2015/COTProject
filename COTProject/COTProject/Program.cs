@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Text.Json;
 
 namespace COTProject
 {
@@ -29,9 +30,78 @@ namespace COTProject
                     for (int k = 0; k < n; k++)
                     {
                         //Generate random number between 0 and 30000.
-                        A[j, k] = rnd.Next(30000);
+                        A[j, k] = rnd.Next(32767);
                     }
                 }
+
+                //TEST
+                //int[] X = new int[10];
+                //for (int u = 0; u < 10; u++)
+                //{
+                //    X[u] = rnd.Next(0, 100);
+                //}
+                //int[] Y = new int[10];
+
+                //for (int o = 0; o < 10; o++)
+                //{
+                //    Y[o] = X[o];
+                //}
+                //Array.Sort(Y); 
+                //foreach (var item in Y)
+                //{
+                //    Console.WriteLine(item.ToString());
+                //}
+                //Console.WriteLine("\n");
+
+                //for (int o = 0; o < 10; o++)
+                //{
+                //    Y[o] = X[o];
+                //}
+                //Alg1(Y, 10, 4);
+                //foreach (var item in Y)
+                //{
+                //    Console.WriteLine(item.ToString());
+                //}
+                //Console.WriteLine("\n");
+
+                //for (int o = 0; o < 10; o++)
+                //{
+                //    Y[o] = X[o];
+                //}
+                //Alg2(Y, 10, 4);
+                //foreach (var item in Y)
+                //{
+                //    Console.WriteLine(item.ToString());
+                //}
+                //Console.WriteLine("\n");
+
+
+                //for (int o = 0; o < 10; o++)
+                //{
+                //    Y[o] = X[o];
+                //}
+                //Alg3(Y, 10, 4);
+                //foreach (var item in Y)
+                //{
+                //    Console.WriteLine(item.ToString());
+                //}
+                //Console.WriteLine("\n");
+                
+                //TEST
+                Console.WriteLine("What ith should be:");
+                for (int j = 0; j < m; j++)
+                {
+                    //Initialize Array that holds our values for jth Array
+                    int[] B = new int[n];
+                    for (int x = 0; x < n; x++)
+                    {
+                        B[x] = A[j, x];
+                    }
+
+                    Array.Sort(B);
+                    Console.WriteLine(B[i - 1]);
+                }
+                Console.WriteLine("\n");
 
 
                 //ALG1
@@ -123,7 +193,7 @@ namespace COTProject
             }
 
             averageMs /= count;
-            Console.WriteLine($"Avg MicroSeconds for {algName} at n = {n} : {averageMs} μs");
+            Console.WriteLine($"Avg MicroSeconds for {algName} at n = {n} : {averageMs} μs\n");
         }
 
         private static void Alg1(int[] A, int n, int i)
@@ -146,12 +216,12 @@ namespace COTProject
 
         private static void InsertionSort(int[] A, int n)
         {
-            for (int j = 0; j < n; j++)
+            for (int j = 1; j < n; j++)
             {
                 int key = A[j];
                 int i = j - 1;
 
-                while(i > 0 && A[i] > key)
+                while(i >= 0 && A[i] > key)
                 {
                     A[i + 1] = A[i];
                     i--;
@@ -253,7 +323,7 @@ namespace COTProject
             int x = A[r];
             int i = p - 1;
 
-            for (int j = p; j < r - 1; j++)
+            for (int j = p; j < r; j++)
             {
                 if (A[j] <= x)
                 {
@@ -266,8 +336,8 @@ namespace COTProject
             }
 
             int temp2 = A[i + 1];
-            A[r] = A[i + 1];
-            A[i + 1] = temp2;
+            A[i+1] = A[r];
+            A[r] = temp2;
 
             return i + 1;
         }
