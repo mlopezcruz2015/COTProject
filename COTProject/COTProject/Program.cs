@@ -1,12 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
+using System.Text;
 using System.Text.Json;
 
 namespace COTProject
 {
     class Program
     {
+        private static StringBuilder sb = new StringBuilder();                     //For logging to .txt
+
         static void Main(string[] args)
         {
             //Create necessary and Reused Variables
@@ -14,7 +18,7 @@ namespace COTProject
             Random rnd = new Random();                                  //Random class to generate random numbers 
 
             //Begin Analysis
-            for (int n = 10000; n < 200000; n += 10000)
+            for (int n = 10000; n <= 200000; n += 10000)
             {
                 int i = (int)Math.Ceiling((double)(2.0 * n / 3.0));         //Get i   
                 int[,] A = new int[m, n];                                   //Generate m Randomized Arrays        
@@ -35,59 +39,8 @@ namespace COTProject
                 }
 
                 //TEST
-                //int[] X = new int[10];
-                //for (int u = 0; u < 10; u++)
-                //{
-                //    X[u] = rnd.Next(0, 100);
-                //}
-                //int[] Y = new int[10];
-
-                //for (int o = 0; o < 10; o++)
-                //{
-                //    Y[o] = X[o];
-                //}
-                //Array.Sort(Y); 
-                //foreach (var item in Y)
-                //{
-                //    Console.WriteLine(item.ToString());
-                //}
-                //Console.WriteLine("\n");
-
-                //for (int o = 0; o < 10; o++)
-                //{
-                //    Y[o] = X[o];
-                //}
-                //Alg1(Y, 10, 4);
-                //foreach (var item in Y)
-                //{
-                //    Console.WriteLine(item.ToString());
-                //}
-                //Console.WriteLine("\n");
-
-                //for (int o = 0; o < 10; o++)
-                //{
-                //    Y[o] = X[o];
-                //}
-                //Alg2(Y, 10, 4);
-                //foreach (var item in Y)
-                //{
-                //    Console.WriteLine(item.ToString());
-                //}
-                //Console.WriteLine("\n");
-
-
-                //for (int o = 0; o < 10; o++)
-                //{
-                //    Y[o] = X[o];
-                //}
-                //Alg3(Y, 10, 4);
-                //foreach (var item in Y)
-                //{
-                //    Console.WriteLine(item.ToString());
-                //}
-                //Console.WriteLine("\n");
-                
-                //TEST
+                Console.WriteLine($"-------------------------------------------------------------------------------------------");
+                Console.WriteLine($"n={n}");
                 Console.WriteLine("What ith should be:");
                 for (int j = 0; j < m; j++)
                 {
@@ -101,7 +54,7 @@ namespace COTProject
                     Array.Sort(B);
                     Console.WriteLine(B[i - 1]);
                 }
-                Console.WriteLine("\n");
+                Console.WriteLine("");
 
 
                 //ALG1
@@ -175,11 +128,18 @@ namespace COTProject
 
                 //Get Average Micro Seconds for ALG1.
                 PrintAverageMicroSeconds("ALG3", ms[2], n);
+
+
+                //Add line for better log formatting.
+                Console.WriteLine($"-------------------------------------------------------------------------------------------");
+                sb.AppendLine("");
             }
 
+            if (File.Exists("log.txt"))
+                File.Delete("log.txt");
 
-
-            Console.WriteLine("Hello World!");
+            File.AppendAllText("log.txt", sb.ToString());
+            sb.Clear();
         }
 
         private static void PrintAverageMicroSeconds(string algName, double[] ms, int n)
@@ -194,6 +154,7 @@ namespace COTProject
 
             averageMs /= count;
             Console.WriteLine($"Avg MicroSeconds for {algName} at n = {n} : {averageMs} μs\n");
+            sb.AppendLine($"{algName} with n = {n} : {averageMs} μs");
         }
 
         private static void Alg1(int[] A, int n, int i)
