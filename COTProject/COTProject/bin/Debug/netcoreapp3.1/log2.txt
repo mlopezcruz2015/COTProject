@@ -1,0 +1,80 @@
+ALG1 with n = 10000 : 172339.2 μs
+ALG2 with n = 10000 : 7032.8 μs
+ALG3 with n = 10000 : 750 μs
+
+ALG1 with n = 20000 : 655004.2 μs
+ALG2 with n = 20000 : 14451.4 μs
+ALG3 with n = 20000 : 1078.2 μs
+
+ALG1 with n = 30000 : 1482693.4 μs
+ALG2 with n = 30000 : 20617.2 μs
+ALG3 with n = 30000 : 1311.2 μs
+
+ALG1 with n = 40000 : 2422664.8 μs
+ALG2 with n = 40000 : 28214.4 μs
+ALG3 with n = 40000 : 1750.8 μs
+
+ALG1 with n = 50000 : 3909650.2 μs
+ALG2 with n = 50000 : 37890.8 μs
+ALG3 with n = 50000 : 1890.6 μs
+
+ALG1 with n = 60000 : 5486426.4 μs
+ALG2 with n = 60000 : 45615.6 μs
+ALG3 with n = 60000 : 2462.2 μs
+
+ALG1 with n = 70000 : 7487443.2 μs
+ALG2 with n = 70000 : 55554.2 μs
+ALG3 with n = 70000 : 3139 μs
+
+ALG1 with n = 80000 : 10181495 μs
+ALG2 with n = 80000 : 60107.8 μs
+ALG3 with n = 80000 : 2946 μs
+
+ALG1 with n = 90000 : 12254773.2 μs
+ALG2 with n = 90000 : 70533.8 μs
+ALG3 with n = 90000 : 3169 μs
+
+ALG1 with n = 100000 : 15111792.6 μs
+ALG2 with n = 100000 : 79117.6 μs
+ALG3 with n = 100000 : 4205 μs
+
+ALG1 with n = 110000 : 18840326.4 μs
+ALG2 with n = 110000 : 89145.8 μs
+ALG3 with n = 110000 : 4476.6 μs
+
+ALG1 with n = 120000 : 22386060.8 μs
+ALG2 with n = 120000 : 94864.8 μs
+ALG3 with n = 120000 : 4598.2 μs
+
+ALG1 with n = 130000 : 25541212.8 μs
+ALG2 with n = 130000 : 102791.4 μs
+ALG3 with n = 130000 : 4187.4 μs
+
+ALG1 with n = 140000 : 29960471.8 μs
+ALG2 with n = 140000 : 112640.8 μs
+ALG3 with n = 140000 : 4819.4 μs
+
+ALG1 with n = 150000 : 34009373.6 μs
+ALG2 with n = 150000 : 125231 μs
+ALG3 with n = 150000 : 6043.4 μs
+
+ALG1 with n = 160000 : 38835164 μs
+ALG2 with n = 160000 : 132063 μs
+ALG3 with n = 160000 : 5888.6 μs
+
+ALG1 with n = 170000 : 43822936.6 μs
+ALG2 with n = 170000 : 140952.8 μs
+ALG3 with n = 170000 : 5518.6 μs
+
+ALG1 with n = 180000 : 49618089.2 μs
+ALG2 with n = 180000 : 146613.8 μs
+ALG3 with n = 180000 : 6193.4 μs
+
+ALG1 with n = 190000 : 54996291.6 μs
+ALG2 with n = 190000 : 161376 μs
+ALG3 with n = 190000 : 8004.4 μs
+
+ALG1 with n = 200000 : 61272363.8 μs
+ALG2 with n = 200000 : 168754.8 μs
+ALG3 with n = 200000 : 8722.8 μs
+

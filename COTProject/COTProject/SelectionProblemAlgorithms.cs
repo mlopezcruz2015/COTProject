@@ -7,7 +7,7 @@ using System.Text.Json;
 
 namespace COTProject
 {
-    class Program
+    class SelectionProblemAlgorithms
     {
         private static StringBuilder sb = new StringBuilder();                     //For logging to .txt
 
@@ -135,10 +135,10 @@ namespace COTProject
                 sb.AppendLine("");
             }
 
-            if (File.Exists("log.txt"))
-                File.Delete("log.txt");
+            if (File.Exists("log2.txt"))
+                File.Delete("log2.txt");
 
-            File.AppendAllText("log.txt", sb.ToString());
+            File.AppendAllText("log2.txt", sb.ToString());
             sb.Clear();
         }
 
